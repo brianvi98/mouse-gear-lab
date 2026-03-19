@@ -8,7 +8,7 @@ export type PointerDataPoint = {
   t: number,    // ms since recording started
 }
 
-export const usePointerCapture= (isRecording: boolean = false) => {
+export const usePointerCapture = (isRecording: boolean = false) => {
   const data = useRef<PointerDataPoint[]>([]);
   const startTime = useRef<number | null>(null);
 
